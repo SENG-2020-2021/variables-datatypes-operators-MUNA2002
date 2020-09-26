@@ -1,21 +1,31 @@
 class Main {
   public static void main(String[] args) {
-   // kindly use appropriate data types for your declaration
-   // declare variables days the debtor defaulted, amount the debtor is to pay per day, amount the debtor is to pay and assign values to them
-   
-   //Declare the variable of the total amount the debtor is to pay, the days the debtor paid for, amount the debtor is left to pay, days the debtor has not payed for
-
-   // calculate and print total amount the debtor is to pay
-
-   // calculate and print the days the debtor paid for
   
-  // calculate and print the amount whose day was not captured because the amount was incomplete
+   int daysDebtorFailed= 5;
+   int amountDebtorPayPerDay= 800;
+   int amountPaid= 2000;
+  
+   int totalAmountToPay;
+   int daysDebtorPaid;
+   int amountLeft;
+   int daysYetToPay;
 
-   // calculate and print amount the debtor is left to pay
-
-   // calculate and print days the debtor has not payed for
-
-   //kindly remove the statement below when you are done with the assignment
-    System.out.println("Hello world!");
+   totalAmountToPay=daysDebtorFailed * amountDebtorPayPerDay;
+   System.out.println(" the total amount the debtor is to pay:" + totalAmountToPay);
+  
+   daysDebtorPaid= amountPaid - amountDebtorPayPerDay;
+   System.out.println(" the days the debtor paid for:" + daysDebtorPaid);
+  
+   int amountNotCompleted= amountPaid % amountDebtorPayPerDay;
+   System.out.println(" the amount not completed:" + amountNotCompleted);
+   
+   amountLeft= totalAmountToPay - amountPaid;
+   System.out.println("amount the debtor is yet to pay:" + amountLeft);
+   
+   daysYetToPay= daysDebtorFailed - daysDebtorPaid;
+   System.out.println("the days the debtor has not paid yet:" + amountLeft);
+  System.out.println("hello Muna:");
+ 
+   
   }
 }
